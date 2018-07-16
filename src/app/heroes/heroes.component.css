@@ -1,0 +1,17 @@
+div.hero-list{
+    display: flex;
+    justify-content: space-evenly
+}
+
+div.hero {
+    font-size: 1.2rem;
+    border: 5px solid rgb(68, 162, 199);
+    padding: 10px;
+    background-color: rgb(68, 162, 199)
+}
+
+div.hero h4{
+    font-size: 1.6rem;
+    margin-top: 10px
+
+}
