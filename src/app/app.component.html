@@ -6,9 +6,11 @@
         <form #heroForm ="ngForm" (ngSubmit)="validateHero($event)">
             <div style="display: inline-block">
                 <label for="name">Nom : </label>
-                <input id="name" name="name" [(ngModel)]="newHeroName" required>
+                <input id="name" name="name" #nameControl="ngModel" [(ngModel)]="newHeroName" required>
+                <span class="error" *ngIf="nameControl.invalid && nameControl.dirty"> Nom du héro obligatioire </span>
             </div>
-            <button>Ajouter</button>
+            <button [disabled]="!heroForm.valid">Ajouter</button>
         </form>
+       <h4>Formulaire Valid ? {{ heroForm.valid }}</h4>
     </div>
 </div>
