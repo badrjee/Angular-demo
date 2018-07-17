@@ -1,3 +1,9 @@
+# Formation : Tour of Heroes
+
+Reprise du tutoriel Tour of Heroes proposé par Angular.
+
+
+
 # HeroesTuto
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
