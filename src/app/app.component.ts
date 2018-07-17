@@ -21,7 +21,7 @@ export class AppComponent {
 
   }
 
-  validateHero(event: any, form:NgForm){
+  validateHero(event: any, form: NgForm){
     let hero : Hero = new Hero();
     hero.name = this.newHeroName;
     this.HeroesComponent.heroes.push(hero);
