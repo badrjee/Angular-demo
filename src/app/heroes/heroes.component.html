@@ -2,7 +2,7 @@
 <div class="hero-list">
   <div class="hero" *ngFor="let hero of heroes; first as isFirstHero">
     <h4>Héro n°{{hero.id}}
-      <img src="/assets/if_edit-trash_9263.png" class="delete-icon" (click)="deleteHero(hero.id)">
+      <img src="/assets/delete.png" class="delete-icon" (click)="deleteHero(hero.id)">
     </h4>
     <span class="label">Nom : </span>
     <span>{{hero.name}}</span>
