@@ -1,24 +1,29 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { Hero } from './hero';
 import { NgForm } from '../../node_modules/@Angular/forms';
 import { HeroesComponent } from './heroes/heroes.component';
+import { HeroService } from './hero.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit  {
 
   title : string;
   newHeroName : string;
   @ViewChild(HeroesComponent)
   HeroesComponent:HeroesComponent;
 
-  constructor(){
+  constructor(private heroService: HeroService){
     this.title = 'Tour Of Heroes';
-    this.newHeroName='';
+    
 
+  }
+
+  ngOnInit(){
+    this.heroService.loadMock();
   }
 
   validateHero(event: any, form: NgForm){

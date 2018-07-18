@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
+import { HeroService } from '../hero.service';
 
 @Component({
   selector: 'app-heroes',
@@ -8,14 +9,12 @@ import { Hero } from '../hero';
 })
 export class HeroesComponent implements OnInit {
   heroes : Array<Hero>;
-  constructor() {
+  constructor(private heroService: HeroService) {
     this.heroes = new Array();
    }
 
   ngOnInit() {
-    this.heroes.push(new Hero('Mario'));
-    this.heroes.push(new Hero('Luigi'));
-    this.heroes.push(new Hero('Luffy'));
+   this.heroService.heroes.subscribe((list) => this.heroes = list);
   }
 
   deleteHero(heroId: number){

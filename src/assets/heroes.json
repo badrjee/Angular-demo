@@ -1,0 +1,27 @@
+[
+{
+    "id":1,
+    "name" : "zelda"
+},
+{
+    "id":2,
+    "name" : "Kakashi"
+},
+{
+    "id":3,
+    "name" : "Mario"
+},
+{
+    "id":4,
+    "name" : "Luigi"
+},
+{
+    "id":5,
+    "name" : "Luffy"
+},
+{
+    "id":6,
+    "name" : "Sakura"
+}
+
+]
