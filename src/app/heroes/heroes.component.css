@@ -1,14 +1,15 @@
 div.hero-list{
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-div.hero {
+div.hero{    
+    margin: 8px;
     font-size: 1.2rem;
     border: 5px solid rgb(68, 162, 199);
     padding: 10px;
-    background-color: rgb(68, 162, 199)
+    background-color: rgb(68, 162, 199);
 }
 
 div.hero h4{
@@ -23,3 +24,8 @@ img{
     height: 24px;
     cursor: pointer;
 }
+
+h2{
+    text-align: center;
+}
+

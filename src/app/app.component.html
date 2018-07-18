@@ -1,7 +1,7 @@
 <h1>{{title}}</h1>
 <div class="container">   
         <div class = "card-body">
-            <h2>Ajouter un nouveau Héro :</h2>
+            <h2>Ajouter un nouveau Héro</h2>
             <form #heroForm ="ngForm"(ngSubmit)="validateHero($event, heroForm)">
                 <div style="display: inline-block">
                     <label for="name">Nom : </label>
@@ -10,7 +10,7 @@
                 </div>
                 <button class="btn btn-primary" [disabled]="!heroForm.valid">Ajouter</button>
             </form>
-            <h4>Formulaire Valid ? {{ heroForm.valid }} </h4>
+            <h6>Formulaire Valid ? {{ heroForm.valid }} </h6>
         </div>
         <app-heroes #heroesComp></app-heroes>
 </div>
