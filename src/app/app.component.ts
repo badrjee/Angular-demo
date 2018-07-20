@@ -1,6 +1,6 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { Hero } from './hero';
-import { NgForm } from '../../node_modules/@Angular/forms';
+import { NgForm } from '@Angular/forms';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroService } from './hero.service';
 
